@@ -51,6 +51,22 @@
         border-radius: 8px;
       }
 
+      .download-btn {
+        display: inline-block;
+        background-color: #0cf;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background-color: #09a;
+      }
+
       #unity-footer {
         display: flex;
         justify-content: space-between;
@@ -61,6 +77,11 @@
   <body>
     <h1 class="title">Absolut Disaster</h1>
     <p class="subtitle">A game by <strong>ABSOLUT</strong></p>
+    <p>
+      <a href="downloads/AbsolutSetup.exe" class="download-btn" download>
+        Download for Windows
+      </a>
+    </p>
     <div id="unity-container">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
